@@ -4,21 +4,21 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
   {
     name: "UseMyCard",
-    live: "https://usemycard.com/",
+    live: "https://usemycard.vercel.app/",
     stack: ["React", "Tailwind CSS"],
     desc: "A family-friendly fintech solution for sharing card names.",
     github: "https://github.com/sumitjha7/usemycard",
   },
   {
     name: "MoviesHunt",
-    live: "https://movieshunt.netlify.app/",
+    live: "https://movieshunt.vercel.app/",
     stack: ["Vanilla JS", "HTML", "CSS"],
     desc: "A clean movie listing website using vanilla JS.",
     github: "https://github.com/sumitjha7/movieshunt",
   },
   {
     name: "DevTooly",
-    live: "https://devtooly.netlify.app/",
+    live: "https://devtooly.vercel.app/",
     stack: ["HTML", "CSS", "JavaScript"],
     desc: "A developer tools directory made with HTML/CSS/JS.",
     github: "https://github.com/sumitjha7/devtooly",

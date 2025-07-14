@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import SJImg from "../assets/updated-SJ.png";
 

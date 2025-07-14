@@ -1,4 +1,4 @@
-import React from "react";
+
 import SJImg from "../assets/updated-SJ.png";
 
 const Hero = () => {

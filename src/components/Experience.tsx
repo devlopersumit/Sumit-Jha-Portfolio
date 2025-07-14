@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaBriefcase, FaChalkboardTeacher, FaChartLine, FaUserTie } from "react-icons/fa";
 
 const experiences = [

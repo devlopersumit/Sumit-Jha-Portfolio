@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaJs, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaFigma, FaGitAlt, FaRegLightbulb, FaJava, FaPython, FaWind, FaDatabase } from "react-icons/fa";
 import { SiCplusplus, SiTailwindcss, SiCanva, SiSupabase, SiNotion, SiTypescript, SiGithubcopilot } from "react-icons/si";
 import { BsChatDots } from "react-icons/bs";

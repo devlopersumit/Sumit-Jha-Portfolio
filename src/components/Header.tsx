@@ -4,7 +4,7 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Projects", href: "#projects" },
   { name: "About", href: "#about" },
-  { name: "Resume", href: "#resume" },
+  { name: "Resume", href: "/assets/Updated-Sumit-Jha-Resume.pdf", external: true },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -30,14 +30,27 @@ function Header() {
         <ul className="hidden md:flex gap-6 text-base font-medium">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <button
-                className={`transition-colors px-2 py-1 rounded hover:bg-slate-100 focus:outline-none ${
-                  active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
-                }`}
-                onClick={() => handleNavClick(link.href)}
-              >
-                {link.name}
-              </button>
+              {link.external ? (
+                <a
+                  className={`transition-colors px-2 py-1 rounded hover:bg-slate-100 focus:outline-none ${
+                    active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
+                  }`}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <button
+                  className={`transition-colors px-2 py-1 rounded hover:bg-slate-100 focus:outline-none ${
+                    active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
+                  }`}
+                  onClick={() => handleNavClick(link.href)}
+                >
+                  {link.name}
+                </button>
+              )}
             </li>
           ))}
         </ul>
@@ -56,14 +69,27 @@ function Header() {
           <ul className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden animate-fade-in">
             {navLinks.map((link) => (
               <li key={link.href} className="w-full text-center">
-                <button
-                  className={`block w-full px-4 py-2 text-lg rounded hover:bg-slate-100 transition-colors ${
-                    active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
-                  }`}
-                  onClick={() => handleNavClick(link.href)}
-                >
-                  {link.name}
-                </button>
+                {link.external ? (
+                  <a
+                    className={`block w-full px-4 py-2 text-lg rounded hover:bg-slate-100 transition-colors ${
+                      active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
+                    }`}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <button
+                    className={`block w-full px-4 py-2 text-lg rounded hover:bg-slate-100 transition-colors ${
+                      active === link.href ? "text-blue-600 font-semibold" : "text-slate-700"
+                    }`}
+                    onClick={() => handleNavClick(link.href)}
+                  >
+                    {link.name}
+                  </button>
+                )}
               </li>
             ))}
           </ul>

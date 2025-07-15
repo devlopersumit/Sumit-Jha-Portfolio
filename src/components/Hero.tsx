@@ -27,8 +27,9 @@ const Hero = () => {
               View Projects
             </a>
             <a
-              href="/assets/Updated-Sumit-Jha.pdf"
-              download
+              href="/assets/Updated-Sumit-Jha-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded border border-blue-600 text-blue-600 font-semibold shadow hover:bg-blue-50 transition-colors duration-200 hover:scale-105"
             >
               Download Resume

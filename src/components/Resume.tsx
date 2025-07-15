@@ -31,7 +31,7 @@ const Resume = () => {
       <div className="max-w-3xl w-full bg-white/60 backdrop-blur-lg rounded-xl shadow-2xl border-l-8 border-blue-200 p-8 flex flex-col items-center text-center animate-fade-in-up">
         <h2 className="text-3xl font-bold text-slate-800 mb-4">Resume</h2>
         <a
-          href="/assets/SumitJha-Resume.pdf"
+          href="/assets/Updated-Sumit-Jha.pdf"
           download
           className="mb-6 px-6 py-2 rounded bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow hover:from-blue-600 hover:to-purple-600 transition-all duration-200 hover:scale-105"
         >

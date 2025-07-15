@@ -27,7 +27,7 @@ const Hero = () => {
               View Projects
             </a>
             <a
-              href="/assets/SumitJha-Resume.pdf"
+              href="/assets/Updated-Sumit-Jha.pdf"
               download
               className="px-6 py-3 rounded border border-blue-600 text-blue-600 font-semibold shadow hover:bg-blue-50 transition-colors duration-200 hover:scale-105"
             >
